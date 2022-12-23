@@ -32,6 +32,11 @@ public class ConcreteReportCreator implements ReportCreator {
     }
 
     @Override
+    public void saveReporttoFile() {
+        reportPresenter.saveReportToFile(create().getReportBody(), title);
+    }
+
+    @Override
     public Report create () {
         Report report = get();
         report.getReportBody().add (0, String.format("%s dateFrom: %s, dateTill: %s",
@@ -61,5 +66,7 @@ public class ConcreteReportCreator implements ReportCreator {
         // TODO Auto-generated method stub
         return false;
     }
+
+    
     
 }

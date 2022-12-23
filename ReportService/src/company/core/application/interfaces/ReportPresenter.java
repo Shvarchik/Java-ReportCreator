@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public interface ReportPresenter {
     
     void printReport(ArrayList<String> reportList);
+
+    void saveReportToFile (ArrayList<String> reportList, String path);
 }
-    
 
