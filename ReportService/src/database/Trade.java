@@ -77,7 +77,7 @@ public class Trade {
 
     @Override
     public String toString() {
-        return String.format ("   %s, %s,  amount = %f", tradeId, tradeDate.toString(), getAmount());
+        return String.format ("   %s, %s,  amount = %.2f", tradeId, tradeDate.toString(), getAmount());
     }
 
     public void clear () {}

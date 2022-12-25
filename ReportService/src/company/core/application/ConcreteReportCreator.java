@@ -37,7 +37,7 @@ public class ConcreteReportCreator implements ReportCreator {
         Report report = get();
         report.getReportBody().add (0, String.format("%s dateFrom: %s, dateTill: %s",
                                     report.getTitle(), report.getDateFrom().toString(),
-                                    report.getDateFrom().toString())); 
+                                    report.getDateTill().toString())); 
         return report;
     }
 
