@@ -12,18 +12,14 @@ public class ConcreteReportCreator implements ReportCreator {
 
     private final ReportDbContext reportDbContext;
     private final ReportPresenter reportPresenter;
-    public Date dateFrom;
-    public Date dateTill;
+    private Date dateFrom;
+    private Date dateTill;
     public String title;
     
     public ConcreteReportCreator(ReportDbContext reportDbContext, ReportPresenter reportPresenter){
       
-
         this.reportDbContext = reportDbContext;
         this.reportPresenter = reportPresenter;
-        // this.dateFrom = dateFrom;
-        // this.dateTill = dateTill;
-        // this.title = title;
     }
 
     @Override
@@ -32,8 +28,8 @@ public class ConcreteReportCreator implements ReportCreator {
     }
 
     @Override
-    public void saveReporttoFile() {
-        reportPresenter.saveReportToFile(create().getReportBody(), title);
+    public void saveReportToFile() {
+        reportPresenter.saveReportToFile(create().getReportBody());
     }
 
     @Override
@@ -67,6 +63,8 @@ public class ConcreteReportCreator implements ReportCreator {
         return false;
     }
 
-    
-    
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 }

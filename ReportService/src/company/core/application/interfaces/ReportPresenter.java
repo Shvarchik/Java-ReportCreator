@@ -6,6 +6,6 @@ public interface ReportPresenter {
     
     void printReport(ArrayList<String> reportList);
 
-    void saveReportToFile (ArrayList<String> reportList, String path);
+    void saveReportToFile (ArrayList<String> reportList);
 }
 

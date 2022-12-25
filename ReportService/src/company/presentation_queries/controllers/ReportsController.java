@@ -13,6 +13,10 @@ public class ReportsController extends Controller{
     public void print(){
         this.reportCreator.printReport();
     }
+
+    public void saveToFile(){
+        this.reportCreator.saveReportToFile();
+    }
     
 }
 

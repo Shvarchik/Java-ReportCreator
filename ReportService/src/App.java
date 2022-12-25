@@ -18,5 +18,10 @@ public class App {
         reportsController.print();
 
     }
+
 }
+/* чтобы сохранить в файле, надо вместо ReportConsolePresenter 
+передать ReportFilePresenter (String имя_файла)  и потом
+reportController.saveToFile()
+*/
 

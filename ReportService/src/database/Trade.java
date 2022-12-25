@@ -22,7 +22,8 @@ public class Trade {
     
     public Trade (ReportType type, LocalDate tradeDate, int partnerId) {
 
-        switch (type){
+        this.type = type;
+        switch (this.type){
             case SALES:
                 this.tradeId = "sale_" + ++Trade.number;
                 break;
@@ -68,6 +69,10 @@ public class Trade {
         
     public LocalDate getTradeDate() {
         return tradeDate;
+    }
+
+    public String getPartnerId() {
+        return partnerId;
     }
 
     @Override
