@@ -8,7 +8,7 @@ import database.TradesDataBase;
 import java.time.LocalDate;
 import java.util.Collection;
 
-public class DatabaseReport implements Database, ReportDbContext {
+public class DatabaseReport implements ReportDbContext {
 
     private Database database;
 

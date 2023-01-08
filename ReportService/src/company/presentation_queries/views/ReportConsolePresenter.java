@@ -15,7 +15,5 @@ public class ReportConsolePresenter implements ReportPresenter {
     }
 
     @Override
-    public void saveReportToFile(ArrayList<String> reportList) {
-                
-    }
+    public void saveReportToFile(ArrayList<String> reportList) {}
 }
